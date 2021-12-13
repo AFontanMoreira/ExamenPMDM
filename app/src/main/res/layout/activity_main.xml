@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--
+        Atributos de los ImageView
+            - id: Nombre que se le asigna para poder hacer referencia a esa View en expecifico en otros metodos del codigo.
+            - layout_width/height:Cuando le especificas a uno “match parent” le dices que quieres que se copie de su elemento padre.Y si usas wrap_content le estás diciendo básicamente que use todo lo que pueda
+            - layout_margin...: Distancia a cierto punto como por ejemplo la disctancia que hay hacia arriba de la View hasta el elemento referenciado
+            - layout_constraint...: Hacia que elemento esta referenciado la View como por ejemplo layout_constraintStart_toStartOf="parent" que hace referencia a la parte de arriba de la pantalla
+            - srcCompat: es la referencia de donde accede la View para optener la imagen que se muestra
+
+    -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="128dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="260dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
